@@ -1,6 +1,6 @@
 node('pyjenkinsslave') {	
  stage('SCM Checkout'){
-         git 'https://github.com/dileep2018/newproject'
+         checkout scm
    }
    stage('Compile-test'){
        // Get maven home path
